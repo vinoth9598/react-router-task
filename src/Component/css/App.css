@@ -1,0 +1,116 @@
+.nav{
+    border:1px solid whitesmoke;
+    background-color: whitesmoke;
+    margin-top: 20px;
+}
+.list{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    cursor: pointer;
+}  
+.list a{
+    color:black;
+    position: relative;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.list a:focus{
+    color:darkblue;
+}
+.list a::after{
+    content: '';
+    height: 3px;
+    width:100%;
+    background: rgb(6, 200, 235);
+    position:absolute;
+    left:0;
+    bottom:-2px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.list a:hover::after{
+    opacity: 1;
+}
+
+
+.headimage{
+    width:100%;
+   
+}
+.container{
+    margin:0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.col-f,.col-s,.col-t{
+    margin: 1rem;
+    border-radius: 10px;
+    background-color:white;
+    cursor: pointer;
+    box-shadow:3px 3px  whitesmoke;
+    
+    
+}
+.col-f:hover,
+.col-s:hover,
+.col-t:hover{
+    background-color:whitesmoke;
+}
+
+.image{
+    width: 20rem;
+    height:16rem;
+    border-radius: 10px;
+   
+}
+.content{
+    width:20rem;
+    padding:2rem;
+    transition:1s ;
+}
+
+.text{
+    cursor: pointer;
+}
+   
+
+@media (min-width:500px){
+        .container{
+            margin:0px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }  
+}
+
+@media (max-width:600px){
+    .image{
+        width: 25rem;
+        height:16rem;
+       
+    }
+    
+}
+@media (max-width:600px){
+    .content{
+        width:25rem;
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:600px){
+    .headimage{
+        height:180px;
+    }
+}

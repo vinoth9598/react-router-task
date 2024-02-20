@@ -1,0 +1,14 @@
+.para{
+    width: 100%;
+    background-color:rgb(245, 242, 242);
+}
+
+.paragraph{
+    margin:2rem;
+    padding:8px;
+    font-stretch:condensed;
+    font-variant:normal;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align:justify;
+}
